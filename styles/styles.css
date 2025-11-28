@@ -1,11 +1,11 @@
 /* CSS Variables */
 :root {
     /* Colors */
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
+    --primary-color: #5e2dae;
+    --primary-dark: #1dd8b9;
     --primary-light: #3b82f6;
-    --secondary-color: #64748b;
-    --accent-color: #f59e0b;
+    --secondary-color: #648b70;
+    --accent-color: #0bf51b;
     --success-color: #10b981;
     --warning-color: #f59e0b;
     --error-color: #ef4444;
@@ -19,8 +19,8 @@
     /* Background Colors */
     --bg-body: #f8fafc;
     --bg-card: #ffffff;
-    --bg-header: #1e293b;
-    --bg-footer: #1e293b;
+    --bg-header: #0a448a;
+    --bg-footer: #0a448a;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
