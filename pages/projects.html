@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личный сайт студента-разработчика - проекты">
+    <title>Проекты - StudentDev Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Мерзликин Иван</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav" aria-label="Основная навигация">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="projects.html" class="nav__link" aria-current="page">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <section class="projects__filters" id="projectsFilters">
+                    <button type="button" class="filter" data-filter="all" aria-pressed="true">Все</button>
+                    <button type="button" class="filter" data-filter="tag1">Tag 1</button>
+                    <button type="button" class="filter" data-filter="tag2">Tag 2</button>
+                    <button type="button" class="filter" data-filter="tag3">Tag 3</button>
+                </section>
+                <section class="projects-grid" id="projectsGrid">
+                    <div class="project-card" data-tags="tag1 tag2">
+                        <div class="project-card__image">
+                            <img src="../images/project1.jpg" alt="картинка для первого проекта" class="responsive-image">
+                        </div>
+                        <div class="project-card__content">
+                            <h2 class="project-card__title">Project One</h2>
+                            <p class="project-card__description">Описание проекта 1</p>
+                            <div class="project-card__tags">
+                                <span class="tag">tag1</span>
+                                <span class="tag">tag2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-tags="tag2">
+                        <div class="project-card__image">
+                            <img src="../images/project2.jpg" alt="картинка для второго проекта" class="responsive-image">
+                        </div>
+                        <div class="project-card__content">
+                            <h2 class="project-card__title">Project Two</h2>
+                            <p class="project-card__description">Описание проекта 2</p>
+                            <div class="project-card__tags">
+                                <span class="tag">tag2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-tags="tag3 tag1">
+                        <div class="project-card__image">
+                            <img src="../images/project3.jpg" alt="картинка для третьего проекта" class="responsive-image">
+                        </div>
+                        <div class="project-card__content">
+                            <h2 class="project-card__title">Project Three</h2>
+                            <p class="project-card__description">Описание проекта 3</p>
+                            <div class="project-card__tags">
+                                <span class="tag">tag3</span>
+                                <span class="tag">tag1</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- JS -->
+                <script src="../scripts/projects.js" defer></script>
+             </div>
+         </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 StudentDev Portfolio</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">ivan-******@mail.ru</a>
+                        <a href="https://github.com/Fayman7/Frontend-And-Backend-Development-KR2/tree/dev" class="footer__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
